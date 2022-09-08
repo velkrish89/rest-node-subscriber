@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/6319d48cba716f307ad15409
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Narthana",
+    "subscribedToChannel" : "New Channel"
+}
+
+###
+
+PATCH http://localhost:3000/subscribers/6319d48cba716f307ad15409
+Content-Type: application/json
+
+{
+    "name" : "Jeevan"
+}
+
+###
+
+DELETE  http://localhost:3000/subscribers/6319da545fc5bddb7697df01
